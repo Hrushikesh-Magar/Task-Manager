@@ -1,0 +1,78 @@
+/* TaskList Styles */
+.task-list {
+    margin-top: 20px;
+}
+
+.task-list h2 {
+    font-size: 1.8rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.filter-container {
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+}
+
+.filter-container label {
+    margin-right: 10px;
+    font-weight: bold;
+}
+
+.filter-container select {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: border-color 0.3s;
+}
+
+.filter-container select:focus {
+    border-color: #007bff;
+}
+
+/* Task Item Styles */
+.task-item {
+    background: #f8f9fa;
+    border: 1px solid #e2e6ea;
+    border-radius: 5px;
+    padding: 15px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: background-color 0.3s;
+}
+
+.task-item:hover {
+    background-color: #e2e6ea;
+}
+
+.task-item.completed {
+    background-color: #d4edda;
+    text-decoration: line-through;
+}
+
+/* Buttons in Task Item */
+.task-item button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 8px 12px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.task-item button:hover {
+    background-color: #0056b3;
+}
+
+.task-item button.delete {
+    background-color: #dc3545;
+}
+
+.task-item button.delete:hover {
+    background-color: #c82333;
+}
